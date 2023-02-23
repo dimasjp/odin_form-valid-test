@@ -9,11 +9,11 @@
     <script src="form-val.js" defer></script>
 </head>
 <body>
-    <form action="/" id="form">
+    <form id="form" novalidate>
         <div class="form-input">
             <label for="email">Email:</label>
             <input type="email" name="email" id="email">
-            <span class="error"></span>
+            <span class="error-msg"></span>
         </div>
         <div class="form-input">
             <label for="region">Region:</label>
@@ -26,23 +26,24 @@
                 <option value="AS">Asia</option>
                 <option value="OCE">Oceania</option>
             </select>
-            <span class="error"></span>
+            <span class="error-msg"></span>
         </div>
         <div class="form-input">
             <label for="zip-code">Zip-Code:</label>
-            <input type="text" name="zip-code" id="zip-code">
-            <span class="error"></span>
+            <input type="number" name="zip-code" id="zip-code">
+            <span class="error-msg"></span>
         </div>
         <div class="form-input">
             <label for="pass">Password:</label>
             <input type="password" name="pass" id="pass">
-            <span class="error"></span>
+            <span class="error-msg"></span>
         </div>
         <div class="form-input">
             <label for="pass-confirm">Confirm Password:</label>
             <input type="password" name="pass-confirm" id="pass-confirm">
-            <span class="error"></span>
+            <span class="error-msg"></span>
         </div>
+        <button id="btn-submit">Submit</button>
     </form>
 </body>
 </html>
